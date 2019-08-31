@@ -12,7 +12,7 @@ import { AppComponent } from './app/app.component';
   imports: [
     // angular
     BrowserAnimationsModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
 
     // core & shared
     CoreModule,
